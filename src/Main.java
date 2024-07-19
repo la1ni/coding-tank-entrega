@@ -15,7 +15,7 @@ public class Main {
         float[] descontoIR = calculaDescontoImpostoRenda(salarios);
 
         for (int i = 0; i < salarios.length; i++) {
-            System.out.printf("O %dº salário informado é R$%.2f. O desconto do INSS é: R$%.2f. O desconto do imposto de renda é: R$%.2f. O valor após os descontos é R$%.2f.", i+1, salarios[i], descontosInss[i], descontoIR[i], (salarios[i] - (descontosInss[i] + descontoIR[i])));
+            System.out.printf("O %dº salário bruto é R$%.2f. O desconto do INSS é: R$%.2f. O desconto do imposto de renda é: R$%.2f. O valor após os descontos (salário líquido) é R$%.2f.", i+1, salarios[i], descontosInss[i], descontoIR[i], (salarios[i] - (descontosInss[i] + descontoIR[i])));
             System.out.println();
         }
 
